@@ -88,4 +88,24 @@ They reflect growth rates.
 We would like to have a simple description of behaviour for use in comparison.
 
 - Evaluation can be misleading consider the functions $$t_1 = 0.002m^2, t_2 = 0.2m, t_3 = 2log(m)$$ 
-- 
+- Want the *closed form.* eg. $$n(n+1) \over 2$$ not $n+(n-1)+...+2+1$
+- Want simplicity.
+
+What simply function does it behave *like*?
+
+#### Solution
+
+Investigate what simple function the more complex one tends to or the asymp- totically approaches as the argument approaches infinity, ie in the limit.
+
+eg. if we wanted to approximate $n^4 + n^2$ by $n^4$
+
+*How much error?*
+
+| $n$ | $n^4$ | $n^2$ | $n^2 \over n^4+n^2$ |
+| ----------- | ----------- | ----------- | ----------- |
+| $1$ | $1$ | $1$ | $50$% |
+| $2$ | $16$ | $4$ | $20$% |
+| $5$ | $625$ | $25$ | $3.8$% |
+| $10$ | $10000$ | $100$ | $1$% |
+| $20$ | $16000$ | $400$ | $0.25$% |
+| $50$ | $6250000$ | $2500$ | $0.04$% |
