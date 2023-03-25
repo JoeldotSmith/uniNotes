@@ -71,3 +71,21 @@ Focus on:
 - independant of run time enviroment
 - improves understanding of data structures
   
+We are interested in comparisons in terms of *growth rates*.
+
+Theortical analysis permits us to do a deeper comparison.
+
+We wish to be able to make statements such as:
+- Searching for a given element in a block of $n$ distinct elements takes $n$ comparisons in the worst case.
+- Searching for a given element in a ordered list takes at least $log(n)$ comparisons in the worst case.
+
+These are lower bounds in the worst case, they tell us we are never going to do any better regardless of the algorithm.
+
+They reflect growth rates.
+
+#### Why Asymptopia
+
+We would like to have a simple description of behaviour for use in comparison.
+
+- Evaluation can be misleading consider $t$
+- 
