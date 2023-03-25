@@ -100,7 +100,6 @@ Investigate what simple function the more complex one tends to or the asymp- tot
 eg. if we wanted to approximate $n^4 + n^2$ by $n^4$
 
 *How much error?*
-
 | $n$ | $n^4$ | $n^2$ | $n^2 \over n^4+n^2$ |
 | ----------- | ----------- | ----------- | ----------- |
 | $1$ | $1$ | $1$ | $50$% |
