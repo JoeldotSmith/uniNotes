@@ -87,5 +87,5 @@ They reflect growth rates.
 
 We would like to have a simple description of behaviour for use in comparison.
 
-- Evaluation can be misleading consider $t$
+- Evaluation can be misleading consider the functions $$t_1 = 0.002m^2, t_2 = 0.2m, t_3 = 2log(m)$$ 
 - 
