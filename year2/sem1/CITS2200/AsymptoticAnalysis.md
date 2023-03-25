@@ -62,5 +62,12 @@ eg. `QuickSort` is usually the fastest even though it has worst time complexity.
 
 - Only possible if we know the distribution over examples
 - More difficult to calculate
-- Often does not provide significanty more information than worst case scenario
+- Often does not primovide significanty more information than worst case scenario
 - May be misleading
+
+### Asymptotic Growth Rates
+Comparing data structures with an analytical approach.
+Focus on:
+- independant of run time enviroment
+- improves understanding of data structures
+  
