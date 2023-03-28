@@ -3,7 +3,10 @@
       - [Lab 1](#lab-1)
       - [Beam Bending](#beam-bending)
         - [Internal forces](#internal-forces)
+          - [eg. 1](#eg-1)
       - [Shear force and bending moment diagrams.](#shear-force-and-bending-moment-diagrams)
+          - [eg.2](#eg2)
+
 
 #### Lab 1
 
