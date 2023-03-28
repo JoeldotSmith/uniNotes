@@ -1,5 +1,14 @@
 # Powered and Non Linear Circuit Elements
 ---
+- [Powered and Non Linear Circuit Elements](#powered-and-non-linear-circuit-elements)
+    - [Basics](#basics)
+    - [Abstraction](#abstraction)
+    - [Non Linear Cicuit elements](#non-linear-cicuit-elements)
+      - [Incremental/Dynamic resistance](#incrementaldynamic-resistance)
+      - [Non linear sources](#non-linear-sources)
+        - [Diodes](#diodes)
+          - [Types](#types)
+          - [The diode model equation](#the-diode-model-equation)
 
 ### Basics
 
@@ -48,3 +57,7 @@ v  = e^u-1\\
 i_D = (I_s)^v
 $$
 $I_s$ is termed the *"saturation current"*, and is a function of temperature.
+![](/assets/nonLinearElements1.png)
+
+- $v_d>0 \rArr$ diode "forward baised"
+- $v_d<0 \rArr$ diode "reverse baised"
