@@ -17,7 +17,7 @@
 2. Turn left and follow the obstacle boundary whilst continuously updating freespace to target F and min. value of $d(x, T)(=d\scriptscriptstyle min$$(T))$. Repeat until the following occurs:
    - The target has been reached. Stop
    - The target is visable, $F \geqslant d(x, T)$ **F in target dir.** Mark this as point $L_i$. Go to step 1.
-   - A position closer to the goal can be reached: $$d(x, T)-F \leqslant d\scriptscriptstyle min  $- STEP$ $ **F in target dir** denote this point $L_i$. Go to step 1.
+   - A position closer to the goal can be reached: $$d(x, T)-F \leqslant d\scriptscriptstyle min  - STEP$$ **F in target dir** denote this point $L_i$. Go to step 1.
    - The robot reached $H_i$ The target is unreachable. Stop
 
 
