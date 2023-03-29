@@ -94,45 +94,45 @@ def dist_bug(x, y):
         # Obstacle collision
         obstacle_detected = False # TODO
         if obstacle_detected:
-        VWSetspeed(0, 0)
-        # Store hit position
-        hit_x, hit_y, hit_angle = VWGetPosition()
+            VWSetspeed(0, 0)
+            # Store hit position
+            hit_x, hit_y, hit_angle = VWGetPosition()
 
-        hit_point = [currentXPosition, currentYPosition]
+            hit_point = [currentXPosition, currentYPosition]
 
-        minimum_distance = math.inf
-        left_hit_point = False
+            minimum_distance = math.inf
+            left_hit_point = False
 
         # Turn left so that wall can be followed
 
-        while True:
-            # boundary following
-            # TODO: follow the boundary (adjust direction each time this loop executes)
-            # Remember make this non-blocking
+            while True:
+                # boundary following
+                # TODO: follow the boundary (adjust direction each time this loop executes)
+                # Remember make this non-blocking
 
-            # If back at hit point return False
-            at_hit_point = False # TODO
-            if at_hit_point:
-                return False
+                # If back at hit point return False
+                at_hit_point = False # TODO
+                if at_hit_point:
+                    return False
 
-            distace, angle = get_relative_goal_location(x, y)
+                distace, angle = get_relative_goal_location(x, y)
 
-            # Store minimum distance to goal
-            if distance < minimum_distance:
-                minimum_distance = distance
-            
-            # Space in direction to Goal
-            angle_to_goal = 0 # TODO calculate the angle in the direction of the goal
+                # Store minimum distance to goal
+                if distance < minimum_distance:
+                    minimum_distance = distance
+                
+                # Space in direction to Goal
+                angle_to_goal = 0 # TODO calculate the angle in the direction of the goal
 
-            lidar_values = LIDARGet() # returns [100, 998, ....., 700, ... 99]
+                lidar_values = LIDARGet() # returns [100, 998, ....., 700, ... 99]
 
-            # angle to the goal is 90° to the right 
-            # Then straight ahead, is the 180th index, need to check the 180+90th = 270th element
-            free_space_to_goal = lidar_values[angle_to_goal] # index 180 is straight ahead
+                # angle to the goal is 90° to the right 
+                # Then straight ahead, is the 180th index, need to check the 180+90th = 270th element
+                free_space_to_goal = lidar_values[angle_to_goal] # index 180 is straight ahead
 
-            if distance = free_space _to_goal <= minimum_distance - Step:
-                #leave the obstacle
-                break # Go back to driving towoards the goal
+                if distance - free_space _to_goal <= minimum_distance - Step:
+                    #leave the obstacle
+                    break # Go back to driving towoards the goal
 
 dist_bug(GOAL_X, GOAL_Y)
 VWSetSpeed(0, 0)
