@@ -43,3 +43,13 @@ Inner classes are used extensively in object oriented programming for *call back
 
 A leaf is an internal node whose left and right subtrees are both empty (external nodes)
 
+##### Size and Height of binary trees
+
+The size of binary tree is the number of internal nodes.
+
+The height of a binary tree $T$ is the length of the longest chain of descendants. That is:
+- $0$ is $T$ is empty.
+- $1+max(height(T_1), height(T_2))$ otherwise, where $T_1, T_2$ are subtrees of the root.
+
+The height of a node $u$ is the height of the subtree rooted at $u$.
+
