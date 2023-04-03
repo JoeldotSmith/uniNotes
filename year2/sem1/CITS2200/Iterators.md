@@ -53,3 +53,10 @@ The height of a binary tree $T$ is the length of the longest chain of descendant
 
 The height of a node $u$ is the height of the subtree rooted at $u$.
 
+##### Skinny and Complete Trees
+
+We are interest in worst cases for height vs size.
+
+Skinny - every node has at most one child internal node
+
+complete (fat) - external nodes and hence leaves appear on at most too adjacent levels
