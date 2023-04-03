@@ -60,3 +60,13 @@ We are interest in worst cases for height vs size.
 Skinny - every node has at most one child internal node
 
 complete (fat) - external nodes and hence leaves appear on at most too adjacent levels
+
+For a given size, skinny trees are the highest possible while complete trees are the lowest possible.
+
+##### Relationship between height and size.
+
+1. A binary tree of height $h$ has size at least $h$.
+2. A binary tree of height $h$ has size at most $2^h - 1$.
+3. A binary tree of size $n$ has height at most $n$.
+4. A binary tree of size $n$ has height at least $log(n+1)$
+
