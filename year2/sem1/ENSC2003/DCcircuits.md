@@ -108,3 +108,12 @@ $v_o = v_s$
 - Assume all storage elements are uncharged for $t < 0$
 - Applying KCl at upper node of capacitor
 
+$$
+i_R + i_c = 0\\
+\frac{v-V_s}{R}+C\frac{dv}{dt} = 0\\
+\frac{v}{R}-\frac{V_s}{R}+C\frac{dv}{dt} = 0\\
+C\frac{dv}{dt}+\frac{v}{R}= \frac{V_s}{R}
+$$
+$$
+\therefore v(t) = V_s +(V_o-V_s)e(pow(-t/RC))
+$$
