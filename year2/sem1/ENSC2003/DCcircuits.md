@@ -86,3 +86,18 @@ $$
 **DC Steady state all voltage and current sources**
 
 When we insert a capacitor into a simple circuit:
+![](/assets/Capcitoreg.png)
+
+Current $i_c$ will be drivin into capacitor to create stored charge.
+
+KCL is still applicable:
+$$
+i_s = i_r+i_c\\
+i_s = \frac{v_s}{R}+C\frac{dv_s}{dt}
+$$
+
+If $v_s$ is constant, $i_s = \frac{v_s}{R}$
+
+**At DC a capcitor behaves as an open circuit, and source voltage appears across capacitor**
+
+$v_o = v_s$
