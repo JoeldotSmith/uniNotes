@@ -117,3 +117,45 @@ $$
 $$
 \therefore v(t) = V_s +(V_o-V_s)e(pow(-t/RC))
 $$
+
+#### General Case for step response of RC circuits
+
+The general case for *step response* of a circuit is its repons when the forcing function (either an independant current or voltage source) is a step function $u(t)$
+
+##### Procedure to find response:
+
+- Consider the case when $t>0$, remove all independant sources simplify the circuit to determine R_eq, C_eq and the time constant $\tau = R(eq)C(eq)$
+
+- With C set an open circuit, use dc-analysis to din dthe inital capacitor voltage just prior to the discontinuity $V_o$.
+- Again with C set as an open circuit ise dc analysis to find capacitor voltage $t = \infty$. Call this V(infinity).
+
+- Solution is:
+$$
+v(t) = V(infinity)+(V_0-V(infinity))e(pow(-t/ \tau))
+$$
+
+
+#### Flux linkage
+Define $L$, that relates to the flux linkage to the current in the conductor:
+$$
+\lambda = Li
+$$
+
+The name given to the paramater $L$ is *inductance*. This term comes about by examining reinduction of electrical engery into the coil as a result of Lens'law
+
+A consuctor placed in a time varying magnetic field( as a result of a time varying current) will have an electro motive force (voltage) *induced* in it such that 
+$$
+v = \frac{d \lambda}{dt} = \frac{d(Li)}{dt} = L\frac{di}{dt}
+$$
+
+Therefore equivalent of Ohm's law for an inductor.
+$$
+v = L\frac{di}{dt}
+$$
+
+##### Series combinations of inductor
+
+N inductor in series:
+$$
+L_T = \sum_{i=1}^{N} L_i 
+$$
