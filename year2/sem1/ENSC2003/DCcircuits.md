@@ -101,3 +101,10 @@ If $v_s$ is constant, $i_s = \frac{v_s}{R}$
 **At DC a capcitor behaves as an open circuit, and source voltage appears across capacitor**
 
 $v_o = v_s$
+
+#### Transient analysis an example of charging
+
+![](/assets/transientAnalysis.png)
+- Assume all storage elements are uncharged for $t < 0$
+- Applying KCl at upper node of capacitor
+
