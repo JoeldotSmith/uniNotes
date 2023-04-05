@@ -91,3 +91,9 @@ $$
 M_E = V_E(2) = (-50)(2)\\
 \therefore M_E = -100Nm
 $$
+
+##### Check
+
+We have solved for the internal forces at D and E
+$N_D = 0, V_D = 750, M_D = -1300Nm$
+$N_E = 0, V_E = -50N, M_E = -100Nm$
