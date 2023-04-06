@@ -30,7 +30,7 @@ I = M_s k^2
 $$
 Where k = radius of gyration
 
-##### Parralel acis theorem
+##### Parralel axis theorem
 
 $ I_p = I_g +md^2$
 
