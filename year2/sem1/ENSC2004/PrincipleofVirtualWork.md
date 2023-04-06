@@ -8,7 +8,7 @@ We can also analyse systems using work and energy.
 
 We can consider how much work is done on a system if we allowed it to undergo a virtual displacement.
 $$
-\delta W = F \delta d
+\delta W = F \cos (\theta)\delta d
 $$ or 
 $$
 \delta W = M \delta \theta

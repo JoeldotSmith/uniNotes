@@ -28,7 +28,7 @@ A rotating rigid body can be represented as an equivalent point mass, located at
 $$
 I = M_s k^2
 $$
-Where k = radius of gyration
+Where $k$ = radius of gyration
 
 ##### Parralel axis theorem
 
