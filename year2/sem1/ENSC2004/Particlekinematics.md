@@ -15,11 +15,73 @@ Particle moving from position $P_1$ to $P_2$ over some time $\Delta t$
 - $\Delta r = r_2-r_1$ is the displacement vector
 
 ##### Velocity
-time rate of change of position
+Time rate of change of position
 $v$~average~$=\frac{\Delta r}{\Delta t}$
 In the time limit that $\Delta t \rArr 0$ we get the **instantaneous velocity**
 $$
 v=\lim_{\Delta t \rightarrow 0} \frac{\Delta r}{\Delta t} = \frac{dr}{dt}
 $$
 
-%%%%
+##### Speed
+Scaler quantity related to velocity
+
+##### Acceleration
+Time rate of change of velocity
+
+**Instantaneous acceleration**
+$$
+a = \frac{dv}{dt}
+$$
+- $a$ is a vector quantity
+- results from an unbalanced force
+- $a$ affects the magnitude and/or the direction of motion
+  
+![hello](/assets/accelerationDiagram.png)
+
+$a_t$: tangential acceleration
+- changes the speed of the object
+
+$a_n$: normal acceleration
+- changes the direction of the object
+
+
+#### Coordinates Systems
+
+To analyse problems consitently we use a coordinate system (set of orthoganal axes)
+
+- Cartesian (x, y, z)
+- Normal-Tangental (n, t, $\beta$) (also called nt coordinates)
+- Cylindrical (r, $\theta$, z)
+- Spherical (r, $\theta, \phi$)
+
+##### Cartesian Coordinates 
+Planar motion no z direction
+![](/assets/cartesian.png)
+
+Position: $ r=xi+yj$
+Velocity: $v = \frac{dx}{dt}i+\frac{dy}{dt}j$
+Acceleration $a = \frac{d^2x}{dt^2}i+\frac{d^2y}{dt^2}j$
+
+
+
+##### n-t coordinates
+When we know the path of motion we can desceive the motion at an instant using a coordinate system that is defined by normal and tangential directions, relative to the path.
+
+How do we deine the n and t direction?
+
+![](/assets/nt.png)
+
+$t_{hat}$: unit vector tangential to the path, always aligned with $v$
+$n_{hat}$: unit vector normal to the paqth, always points to the centre of curvature
+$\rho$ instantaneous radius of curvature of the path
+
+
+$$
+a = \frac{dv}{dt}=\frac{dv}{dt}t_{hat}+v\frac{dt_{hat}}{dt}
+$$
+$$
+\frac{dt_{hat}}{dt} = \frac{v}{\rho}n_{hat}
+$$
+$$
+\therefore a = \frac{dv}{dt}t_{hat} + \frac{v}{\rho}n_{hat}
+$$
