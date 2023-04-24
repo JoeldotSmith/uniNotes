@@ -1,4 +1,4 @@
-# DC Cicuits including storafe elements
+# DC Cicuits including storage elements
 ---
 #### Long term bs short term energy storage
 - Long term
