@@ -37,3 +37,17 @@ Given one, you can always obtain the other. You can transfer from one to the oth
 ![](/assets/phasorRes.png)
 ![](/assets/phasorCap.png)
 ![](/assets/phasorInd.png)
+
+
+##### Generalized "impedance"
+- Above analysis shows that in the phasor-representaion, resistance, capacitance and inductance all behave as if they were a *resistance-like* entity.
+- We use the term *impedance* when referring to this resistace like quantity
+- Similar to conductance, the inverse of impedance is admittance.
+- Impedance has units of Ohms($\Omega$) and us generally given the phasor symbol $\bar{Z}$
+- Admittance has units of Mho($\mho$) or Siemens(S) and is given the phasor symbol $\bar{Y}$
+
+| Type  |  $\bar{Z}$ |$\bar{Y}$|
+|---|---|---|
+| Resistor, R  | $R$  |$1/R$|
+| Capacitor, C  | $1/j\omega C$  | $j\omega C$ |
+| Inductor, L  |  $j\omega L$ | $1/j\omega L$ |
