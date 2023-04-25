@@ -1,5 +1,20 @@
 # Kinematics of a Particle
 ---
+- [Kinematics of a Particle](#kinematics-of-a-particle)
+      - [Fundementals of Motion:](#fundementals-of-motion)
+        - [Position](#position)
+        - [Velocity](#velocity)
+        - [Speed](#speed)
+        - [Acceleration](#acceleration)
+      - [Coordinates Systems](#coordinates-systems)
+        - [Cartesian Coordinates](#cartesian-coordinates)
+        - [n-t coordinates](#n-t-coordinates)
+        - [Circular motion](#circular-motion)
+          - [Fixed axis rotation of a rigid body](#fixed-axis-rotation-of-a-rigid-body)
+          - [Scaler equations of motion (rotational)](#scaler-equations-of-motion-rotational)
+          - [Dependant motion of two particles](#dependant-motion-of-two-particles)
+          - [Friction](#friction)
+
 #### Fundementals of Motion:
 - Position
 - Velocity
@@ -85,3 +100,55 @@ $$
 $$
 \therefore a = \frac{dv}{dt}t_{hat} + \frac{v}{\rho}n_{hat}
 $$
+
+##### Circular motion
+
+![](/assets/circularMotion.png)
+
+
+###### Fixed axis rotation of a rigid body
+
+Rigid $\rArr$ no deformation, fixed acis rotation about $O$.
+
+Each point on a rigid body undergo the same rotational motion about $O$.
+
+![](/assets/fixedAxisRotation.png)
+
+Angular velocity:
+$$
+\frac{d}{dt} \rArr \dot{\theta_2} = \dot{\theta_1}(+0)= w
+$$
+Angular acceleration:
+$$
+\frac{d^2}{dt^2} \rArr \dot{\dot{\theta_2}} = \dot{\dot{\theta_1}} = \alpha
+$$
+
+###### Scaler equations of motion (rotational)
+
+$v = \frac{ds}{dt}$
+$w = \frac{d\theta}{dt} \rArr wdt=d\theta$
+$\alpha = \frac{dw}{dt} \rArr \alpha dt=dw$
+$\alpha d\theta = w dw$
+
+###### Dependant motion of two particles
+
+In mary kinematic problems, the motion of one object depends on the motion of another.
+
+
+eg. 
+![](/assets/dependentKinematics.png)
+
+The position of A and B are dependent on each other
+
+###### Friction
+
+No motion $\rArr$ friction force opposes the impending motion.
+
+Friction force $F_{friction}$ balances the applied force $F$ up to a limit.
+![](/assets/friction.png)
+
+$F_{applied} < \mu_s F_N$ : no motion, $F_{friction} = F_{applied}$
+$F_{applied} > \mu_s F_N$ : motion, $F_{friction} = \mu_k F_N$
+
+$F_{applied} = \mu_s F_N$ : point of slipping, $F_{friction} = \mu_s F_N$
+
