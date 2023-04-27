@@ -25,7 +25,7 @@ $$
 ##### Operations on complex numbers
 - All traditional operators used on real numbers can be extended
   - $z_1+z_2 = (x_1+x_2)+i(y_1+y_2)$
-  - $z_1*z_2 = (x_1x_2-y_1y_2)+i(x_1y_2-x_2y_1)$
+  - $z_1*z_2 = (x_1x_2-y_1y_2)+i(x_1y_2+x_2y_1)$
   - $\frac{z_1}{z_2} = \frac{r_1}{r_2}e^{i(\theta_1-\theta_2)}$ 
 
 ![](/assets/complexToRect.png)
