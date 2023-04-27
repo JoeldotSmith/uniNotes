@@ -49,7 +49,7 @@ Given one, you can always obtain the other. You can transfer from one to the oth
 | Type  |  $\bar{Z}$ |$\bar{Y}$|
 |---|---|---|
 | Resistor, R  | $R$  |$1/R$|
-| Capacitor, C  | $1/j\omega C$  | $j\omega C$ |
+| Capacitor, C  | $1/j\omega C = j/\omega C$  | $j\omega C$ |
 | Inductor, L  |  $j\omega L$ | $1/j\omega L$ |
 
 
