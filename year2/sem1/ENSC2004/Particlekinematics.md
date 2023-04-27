@@ -108,7 +108,7 @@ $$
 
 ###### Fixed axis rotation of a rigid body
 
-Rigid $\rArr$ no deformation, fixed acis rotation about $O$.
+Rigid $\rArr$ no deformation, fixed axis rotation about $O$.
 
 Each point on a rigid body undergo the same rotational motion about $O$.
 
