@@ -48,7 +48,7 @@ $$
 
 
 
-**IMPORTANT** $R_M = R_L$
+**IMPORTANT** $R_S = R_L$
 
 
 
