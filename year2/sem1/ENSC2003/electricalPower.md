@@ -42,6 +42,23 @@ $$
 i = \frac{v_s}{(R_s+R_l)}
 $$
 
+
+
+
+
+
+
+**IMPORTANT** $R_M = R_L$
+
+
+
+
+
+
+
+
+
+
 Which results in a power delivered to the load of :
 $$
 P_l = i^2R_l = \frac{R_lv^2_s}{(R_s+R_l)^2}
