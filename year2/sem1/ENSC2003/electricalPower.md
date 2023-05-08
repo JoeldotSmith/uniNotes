@@ -162,3 +162,127 @@ $$
 
 - Note the above definitions of RMS apply for any periodic signal (not just sinusoid) and are ultimatly tied to power in a wave form.
 
+
+
+Generalized circuit including reactive elements:
+
+![](/assets/generalizedPower.png)
+
+Where $$
+I = \frac{\hat{V_S}}{\hat{Z_S}+\hat{Z_L}}
+$$
+
+without loss of generality we assume $\hat{V_S} = V_S \angle 0$
+
+where $$
+\tan(\alpha) = \frac{X_S+X_L}{R_S+R_L}
+$$
+
+
+So:
+$$
+P=\frac{V^2_SR_L}{(R_S+R_L)^2+(X_S+X_L)^2}
+$$
+To maximize $P$ with respect to $R_L$, we ned to maximize the numerator and minimize the denominatpr
+
+1. Maximize $R_L$ whilst minimizing $(R_S+R_L)^2$ for only positive values of $R_S$ and $R_L$ for only positive values of $R_S$ and $R_L$
+2. Minimize $(X_S+X_L)^2$, for any real valye of $X_S$ and $X_L$
+
+Condition 2 is satisfied eg $(X_S+X_L)^2$ is minimized (zero) when $X_L = -X_S$
+
+Resulting in $$
+P = \frac{V_S^2R_L}{(R_L+R_S)^2}
+$$
+
+This is the same as the purely resistive case and is maximized when $R_L=R_S$
+
+#### MAXIMUM POWER TRANSFER THEOREM (PHASOR FORM)
+
+Power to load is maximized when $\hat{Z_L}= \hat{Z^*_S}$
+
+And maximum power transferred to load is:
+
+$$
+P_{max} = \frac{V_S^2}{4R_S}
+$$
+
+Note this is only the resistive case when $X_L = X_S = 0$
+
+#### Impedance matching
+
+Consider a voltage source $\hat{V_S}$ with internal impedance $\hat{Z_S}$, supplying power to a load $\hat{Z_L}$
+
+If the maximum power transfer condition is not satisfied we can surmise that the power delivered to the load with be lower than what is possible - lower power factor.
+
+If we cannot change either the source or load impedance, how do you maximize power transfer
+
+The question then arises can we improve power transfer by inserting a "matching network" between the source and load?
+
+ie can we make the load and matching network together mimic the impedance required to satisfy maximum power transfer?
+
+if matching network can be designed to be non-lossy (ie purely reactive), we could conclude that
+
+- maximum power is supplied
+- all that power must be dissapated in the load
+
+![](/assets/matchingNetwork.png)
+
+Examine the practival example of a radio transmitter with
+- Deliverable maximum power of 10kW
+- Frequency of 1000kHz
+- Resistance of 50$\Omega$
+- Supplying a radio antenna of impedance 250$\Omega$ (also purely reactive)
+
+![](/assets/radioTransmitter.png)
+
+The equivalent circuit is then 
+
+![](/assets/equivalentCircuit.png)
+
+What is $\hat{V_s}$
+- max poewr delivered when $Z_L=Z_S^*$
+- Max power delievered of 10kW implies 20kW generated (50% loss in $\hat{Z_S}$)
+
+$$
+P = \frac{V_S^2}{R}
+\rArr 20000 = \frac{V_S^2}{100}
+\rArr V_S = 1414V_{RMS}
+$$
+
+Now insert a proposed matching network 
+- purely reactive 
+- containing two reactive components $X_1$ and $X_2$
+
+![](/assets/proposedMatchingNetwork.png)
+
+Evaluate $\hat{Z_{in}}$
+
+$$
+\hat{Z_{in}} = jX_1 + jX_2 || 250 = jX_1 + \frac{j250X_2}{250+jX_2} = \frac{jX_1(250+jX_2)}{250+jX_2} + \frac{j250X_2}{250+jX_2}
+$$$$
+\hat{Z_{in}} = \frac{j250X_1+j250X_2-X_1X_2}{250+jX_2}
+$$
+
+Max power transfer $Z_{in} = Z^*_S = 50\Omega$
+
+$$
+\rArr j250X_1+j200X_2 -X_1X_2 = 12500
+$$
+
+Split real and imaginary parts and solve
+
+$X_1 = \plusmn100$
+$X_2 = \mp 125$
+
+Say $X_1 = 100, X_2 = -125$
+
+$$
+f = 100kHz \rArr \omega  = 2\pi f = 6.28*10^6 rads/s
+$$
+
+$X_1>0 \rArr$ inductor: $X_1 = \omega L \rArr L = \frac{X_1}{\omega} = 100/6.28*10^6 = 16 \mu H$
+$X_2 < 0 \rArr$ capacitor : $X_2 = -1/\omega C \rArr C = -1/\omega X_2 = 1/(6.28*10^6 * 125) - 1.27nF$
+
+So the matched circuit is 
+![](/assets/matchedCircuit.png)
+
